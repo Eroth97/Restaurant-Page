@@ -1,21 +1,4 @@
-function createLi(name){
-  const li = document.createElement('li');
-  li.textContent = name;
-  return li
-}
-
-function createHeader(){
-  const header = document.createElement('header');
-  const ul = document.createElement('ul');
-
-  const links = [createLi('Home'), createLi('Menu'), createLi('Contact')];
-
-  links.forEach(element => ul.appendChild(element));
-
-  header.appendChild(ul);
-
-  return header;
-}
+import { createLi } from "./recurrentFunctions";
 
 function createContent(content){
   const firstTitle = document.createElement('h2');
@@ -42,4 +25,4 @@ function createContent(content){
   content.appendChild(hours);
 }
 
-export {createLi, createHeader, createContent};
+export {createContent};

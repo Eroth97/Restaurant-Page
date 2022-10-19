@@ -1,4 +1,5 @@
-import { createHeader, createContent } from "./homepage";
+import { createHeader } from "./header";
+import { createContent } from "./homepage";
 
 let content = document.getElementById('content');
 
