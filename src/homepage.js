@@ -1,8 +1,7 @@
-import { createLi } from "./recurrentFunctions";
+import { createLi, createTitle } from "./recurrentFunctions";
 
 function createContent(content){
-  const firstTitle = document.createElement('h2');
-  content.appendChild(firstTitle);
+  content.appendChild(createTitle('The Crazy Restaurant'));
 
   
   const presentation = document.createElement('div');

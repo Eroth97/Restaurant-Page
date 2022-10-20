@@ -1,9 +1,7 @@
-import {createLi} from './recurrentFunctions';
+import {createLi, createTitle} from './recurrentFunctions';
 
 function createMenu(content){
-  const title = document.createElement('h2');
-  title.textContent = 'Menu';
-  content.appendChild(title);
+  content.appendChild(createTitle('Menu'));
 
   const menu = document.createElement('ul');
   const meals = [createLi('Hamburger'), createLi('Hot Dog'), createLi('Pizza')];

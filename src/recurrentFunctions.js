@@ -1,7 +1,13 @@
-function createLi(name){
+function createLi(text){
   const li = document.createElement('li');
-  li.textContent = name;
+  li.textContent = text;
   return li
+}
+
+function createTitle(titleName){
+  const title = document.createElement('h2');
+  title.textContent = titleName;
+  return title;
 }
 
 function cleanContent(content){
@@ -10,4 +16,4 @@ function cleanContent(content){
   children.forEach(element => content.removeChild(element));
 }
 
-export {createLi, cleanContent};
+export {createLi, cleanContent, createTitle};
