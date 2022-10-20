@@ -1,4 +1,4 @@
-import { createLi } from "./recurrentFunctions";
+import { createLi } from './recurrentFunctions';
 
 function createHeader(){
   const header = document.createElement('header');
@@ -6,6 +6,7 @@ function createHeader(){
 
   const links = [createLi('Home'), createLi('Menu'), createLi('Contact')];
 
+  links.forEach(element => element.classList.add('link'));
   links.forEach(element => ul.appendChild(element));
 
   header.appendChild(ul);

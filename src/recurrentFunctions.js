@@ -4,4 +4,10 @@ function createLi(name){
   return li
 }
 
-export {createLi};
+function cleanContent(content){
+  //Remember: something.children returns an HTML Collection. Not an array!
+  const children = [...content.children]; 
+  children.forEach(element => content.removeChild(element));
+}
+
+export {createLi, cleanContent};
