@@ -1,8 +1,8 @@
 import { createHeader } from './header';
 import { createContent } from './homepage';
 import { cleanContent } from './recurrentFunctions';
-import { createMenu } from './menu.js';
-
+import { createMenu } from './menu';
+import { createContact } from './contact';
 
 let content = document.getElementById('content');
 
@@ -15,3 +15,4 @@ links.forEach(element => element.addEventListener('click', () => cleanContent(co
 
 links[0].addEventListener('click', () => createContent(content));
 links[1].addEventListener('click', () => createMenu(content));
+links[2].addEventListener('click', () => createContact(content));
