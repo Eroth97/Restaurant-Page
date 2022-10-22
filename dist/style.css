@@ -1,21 +1,54 @@
-header ul{
-  list-style: none;
-  display: flex;
-  justify-content: center;
+:root{
+  --white-font: whitesmoke;
+  --lightest-gray: #adb5bd;
+  --medium-gray: #495057;
+  --darkest-gray: #212529;
+  --button-color: #343a40;
+  --red: #dc3545;
+  --green: #198754;
 }
 
-header li{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-#content{
+body{
+  font-family: 'Fuzzy Bubbles', cursive;
+  background-color: var(--medium-gray);
+  color: var(--white-font);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hours ul{
+/* Header */
+header ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+header li{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  background-color: var(--darkest-gray);
+  border-radius: 8px;
+}
+
+header li:hover{
+  transform: scale(1.25);
+}
+
+/* Content */
+#content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  padding: 1rem;
+  border: 1px solid var(--lightest-gray);
+  border-radius: 8px;
+}
+
+#content ul{
   list-style: none;
   padding: 0;
 }
