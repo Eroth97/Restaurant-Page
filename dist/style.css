@@ -52,3 +52,25 @@ header li:hover{
   list-style: none;
   padding: 0;
 }
+
+/* Homepage */
+
+#content div+div{
+  margin-top: 1rem;
+}
+
+.hours h3{
+  display: flex;
+  justify-content: center;
+}
+
+.hours ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hours li{
+  margin: 0.5rem;
+}
+

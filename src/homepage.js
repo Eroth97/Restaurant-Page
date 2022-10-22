@@ -18,7 +18,7 @@ function createContent(content){
   hours.appendChild(secondTitle);
 
   const ul = document.createElement('ul');
-  const lis = [createLi('Sunday 8:00-16:00'), createLi('Monday 8:00-16:00'), createLi('Tuesday 8:00-16:00'), createLi('Wednesday 8:00-16:00'), createLi('Thursday 8:00-16:00'), createLi('Friday 8:00-16:00'), createLi('Saturday 8:00-16:00')];
+  const lis = [createLi('Sunday: 8:00-16:00'), createLi('Monday: 8:00-16:00'), createLi('Tuesday: 8:00-16:00'), createLi('Wednesday: 8:00-16:00'), createLi('Thursday: 8:00-16:00'), createLi('Friday: 8:00-16:00'), createLi('Saturday: 8:00-16:00')];
   lis.forEach(element => ul.appendChild(element));
   hours.appendChild(ul);
   content.appendChild(hours);
