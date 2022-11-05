@@ -74,3 +74,14 @@ header li:hover{
   margin: 0.5rem;
 }
 
+/* Menu */
+.menu li{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu img{
+  width: 5rem;
+}
